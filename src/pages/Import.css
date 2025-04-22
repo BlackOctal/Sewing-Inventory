@@ -1,0 +1,428 @@
+/* Import.css */
+
+/* Page title */
+.page-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Grid layout for import/export sections */
+  .import-export-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  /* Media query for responsive grid */
+  @media (min-width: 768px) {
+    .import-export-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Panel styling for import/export boxes */
+  .panel {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  /* Section header with icon */
+  .section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Icon container */
+  .icon-container {
+    border-radius: 9999px;
+    padding: 0.75rem;
+    margin-right: 0.75rem;
+  }
+  
+  .blue {
+    background-color: #dbeafe; /* bg-blue-100 */
+  }
+  
+  .green {
+    background-color: #dcfce7; /* bg-green-100 */
+  }
+  
+  /* Feature icons */
+  .feature-icon {
+    font-size: 1.25rem;
+  }
+  
+  .blue-icon {
+    color: #3b82f6; /* text-blue-500 */
+  }
+  
+  .green-icon {
+    color: #22c55e; /* text-green-500 */
+  }
+  
+  /* Section title */
+  .section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  /* Section description */
+  .section-description {
+    color: #4b5563; /* text-gray-600 */
+    margin-bottom: 1rem;
+  }
+  
+  /* Upload file container */
+  .upload-container {
+    margin-bottom: 1rem;
+  }
+  
+  /* Label container with download button */
+  .label-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Form label */
+  .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151; /* text-gray-700 */
+  }
+  
+  /* Download template button */
+  .download-template-button {
+    color: #3b82f6; /* text-blue-500 */
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .download-template-button:hover {
+    color: #1d4ed8; /* text-blue-700 */
+  }
+  
+  .button-icon {
+    margin-right: 0.25rem;
+  }
+  
+  /* Drop zone for file upload */
+  .drop-zone {
+    margin-top: 0.25rem;
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 1.5rem;
+    border: 2px dashed #d1d5db; /* border-gray-300 */
+    border-radius: 0.375rem;
+  }
+  
+  /* Upload content container */
+  .upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Upload icon */
+  .upload-icon {
+    height: 3rem;
+    width: 3rem;
+    color: #9ca3af; /* text-gray-400 */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Upload text container */
+  .upload-text {
+    display: flex;
+    font-size: 0.875rem;
+    color: #4b5563; /* text-gray-600 */
+  }
+  
+  /* Upload label */
+  .upload-label {
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    color: #2563eb; /* text-blue-600 */
+  }
+  
+  .upload-label:hover {
+    color: #3b82f6; /* text-blue-500 */
+  }
+  
+  /* Drag text */
+  .drag-text {
+    padding-left: 0.25rem;
+  }
+  
+  /* File type hint */
+  .file-type-hint {
+    font-size: 0.75rem;
+    color: #6b7280; /* text-gray-500 */
+    margin-top: 0.25rem;
+  }
+  
+  /* Selected file info */
+  .selected-file-info {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #6b7280; /* text-gray-500 */
+  }
+  
+  /* Action buttons */
+  .action-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Blue button */
+  .blue-button {
+    background-color: #2563eb; /* bg-blue-600 */
+  }
+  
+  .blue-button:hover {
+    background-color: #1d4ed8; /* bg-blue-700 */
+  }
+  
+  /* Green button */
+  .green-button {
+    background-color: #16a34a; /* bg-green-600 */
+  }
+  
+  .green-button:hover {
+    background-color: #15803d; /* bg-green-700 */
+  }
+  
+  /* Disabled button */
+  .button-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Spinner animation */
+  .spinner {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 0.75rem;
+    margin-left: -0.25rem;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spinner-track {
+    opacity: 0.25;
+  }
+  
+  .spinner-path {
+    opacity: 0.75;
+  }
+  
+  /* Import results container */
+  .result-container {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    background-color: #f9fafb; /* bg-gray-50 */
+  }
+  
+  /* Result title */
+  .result-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Result content */
+  .result-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Success text */
+  .success-text {
+    color: #16a34a; /* text-green-600 */
+  }
+  
+  /* Error text */
+  .error-text {
+    color: #dc2626; /* text-red-600 */
+  }
+  
+  /* Error list container */
+  .error-list-container {
+    margin-top: 0.5rem;
+    max-height: 10rem;
+    overflow-y: auto;
+  }
+  
+  /* Error list */
+  .error-list {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    font-size: 0.875rem;
+    color: #dc2626; /* text-red-600 */
+  }
+  
+  .error-list li {
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Format container */
+  .format-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Format title */
+  .format-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151; /* text-gray-700 */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Code container */
+  .code-container {
+    background-color: #f9fafb; /* bg-gray-50 */
+    padding: 1rem;
+    border-radius: 0.375rem;
+  }
+  
+  /* Code block */
+  .code-block {
+    font-size: 0.75rem;
+    overflow-x: auto;
+    white-space: pre-wrap;
+  }
+  
+  /* Info box */
+  .info-box {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    background-color: #eff6ff; /* bg-blue-50 */
+  }
+  
+  /* Info title */
+  .info-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1e40af; /* text-blue-800 */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Info text */
+  .info-text {
+    font-size: 0.875rem;
+    color: #1e40af; /* text-blue-700 */
+  }
+  
+  /* Documentation section */
+  .documentation-section {
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  /* Table wrapper */
+  .table-wrapper {
+    overflow-x: auto;
+  }
+  
+  /* Data table */
+  .data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  /* Table header */
+  .table-header {
+    background-color: #f9fafb; /* bg-gray-50 */
+  }
+  
+  .table-header th {
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #6b7280; /* text-gray-500 */
+    letter-spacing: 0.05em;
+  }
+  
+  /* Table body */
+  .table-body tr {
+    border-bottom: 1px solid #e5e7eb; /* divide-y divide-gray-200 */
+  }
+  
+  .table-body tr:last-child {
+    border-bottom: none;
+  }
+  
+  /* Table cells */
+  .field-name {
+    padding: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #111827; /* text-gray-900 */
+    white-space: nowrap;
+  }
+  
+  .field-type, .field-required {
+    padding: 1.5rem;
+    font-size: 0.875rem;
+    color: #6b7280; /* text-gray-500 */
+    white-space: nowrap;
+  }
+  
+  .field-description {
+    padding: 1.5rem;
+    font-size: 0.875rem;
+    color: #6b7280; /* text-gray-500 */
+  }
+  
+  /* Screen reader only class */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }

@@ -1,0 +1,133 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0.625rem 1rem;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo-section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+  }
+  
+  .app-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2d3748;
+  }
+  
+  .search-section {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .search-form {
+    width: 100%;
+    max-width: 32rem;
+  }
+  
+  .search-input-container {
+    position: relative;
+  }
+  
+  .search-input {
+    width: 70%;
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #cbd5e0;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 0.75rem;
+  }
+  
+  .icon-gray {
+    color: #a0aec0;
+  }
+  
+  .user-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .notification-button {
+    padding: 0.5rem;
+    border-radius: 9999px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .notification-button:hover {
+    background-color: #f7fafc;
+  }
+  
+  .notification-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #f56565;
+    border-radius: 9999px;
+  }
+  
+  .user-info {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-avatar {
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 9999px;
+    background-color: #edf2f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4a5568;
+  }
+  
+  .username {
+    margin-left: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4a5568;
+  }

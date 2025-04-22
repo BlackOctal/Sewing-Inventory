@@ -1,0 +1,271 @@
+/* ViewPart.css */
+
+/* Page header with title and action buttons */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-icon {
+    margin-right: 1rem;
+    background-color: #e5e7eb; /* bg-gray-200 */
+    padding: 0.5rem;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .back-icon:hover {
+    background-color: #d1d5db; /* bg-gray-300 */
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  /* Action buttons */
+  .action-buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .edit-button, .delete-button {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-button {
+    background-color: #eab308; /* bg-yellow-500 */
+  }
+  
+  .edit-button:hover {
+    background-color: #ca8a04; /* bg-yellow-600 */
+  }
+  
+  .delete-button {
+    background-color: #ef4444; /* bg-red-500 */
+  }
+  
+  .delete-button:hover {
+    background-color: #dc2626; /* bg-red-600 */
+  }
+  
+  .button-icon {
+    margin-right: 0.5rem;
+  }
+  
+  /* Main details container */
+  .details-container {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Section styling */
+  .section {
+    padding: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  /* Basic info section */
+  .basic-info {
+    border-bottom: 1px solid #e5e7eb; /* border-b */
+  }
+  
+  .basic-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .basic-info-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Details grid layout */
+  .details-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  @media (min-width: 768px) {
+    .details-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Location section */
+  .location-section {
+    border-bottom: 1px solid #e5e7eb; /* border-b */
+  }
+  
+  @media (min-width: 768px) {
+    .location-section {
+      border-right: 1px solid #e5e7eb; /* border-r */
+    }
+  }
+  
+  .location-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .box-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .color-indicator {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 9999px;
+    margin-right: 0.75rem;
+  }
+  
+  .location-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 0.75rem;
+  }
+  
+  /* Price section */
+  .price-section {
+    border-bottom: 1px solid #e5e7eb; /* border-b */
+  }
+  
+  .price-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Metadata section */
+  .metadata-section {
+    background-color: #f9fafb; /* bg-gray-50 */
+  }
+  
+  .metadata-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .metadata-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Info item styling */
+  .info-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-size: 0.875rem;
+    color: #6b7280; /* text-gray-500 */
+  }
+  
+  .value {
+    font-weight: 500;
+  }
+  
+  /* Loading spinner */
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
+  }
+  
+  .loading-spinner {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border-top: 2px solid #3b82f6;
+    border-bottom: 2px solid #3b82f6;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Error message */
+  .error-message {
+    background-color: #fee2e2; /* bg-red-100 */
+    border: 1px solid #f87171; /* border-red-400 */
+    color: #b91c1c; /* text-red-700 */
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+  }
+  
+  /* Not found message */
+  .not-found-container {
+    text-align: center;
+    padding: 2.5rem 0;
+  }
+  
+  .not-found-text {
+    font-size: 1.25rem;
+    color: #4b5563; /* text-gray-600 */
+  }
+  
+  /* Back buttons */
+  .back-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .error-back {
+    background-color: #ef4444; /* bg-red-500 */
+  }
+  
+  .error-back:hover {
+    background-color: #dc2626; /* bg-red-600 */
+  }
+  
+  .primary-back {
+    background-color: #3b82f6; /* bg-blue-500 */
+  }
+  
+  .primary-back:hover {
+    background-color: #2563eb; /* bg-blue-600 */
+  }

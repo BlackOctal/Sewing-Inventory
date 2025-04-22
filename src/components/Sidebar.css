@@ -1,0 +1,94 @@
+/* Sidebar.css - Fixed */
+
+.sidebar {
+    background-color: #2563eb; /* bg-blue-800 */
+    color: #dbeafe; /* text-blue-100 */
+    width: 16rem; /* w-64 */
+    padding: 1rem 0.5rem; /* py-4 px-2 */
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    flex-shrink: 0; /* Prevent sidebar from shrinking */
+  }
+  
+  .sidebar-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem; /* px-4 */
+    margin-bottom: 1.5rem; /* part of space-y-6 */
+  }
+  
+  .title-text {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 800; /* font-extrabold */
+    color: #ffffff; /* Ensuring title text is visible */
+  }
+  
+  .sidebar-nav {
+    margin-bottom: 1.5rem; /* part of space-y-6 */
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem; /* px-4 py-3 */
+    border-radius: 0.5rem; /* rounded-lg */
+    text-decoration: none;
+    color: #dbeafe; /* Ensuring link text is visible */
+    transition: background-color 0.2s;
+  }
+  
+  .nav-link:hover {
+    background-color: #1d4ed8; /* hover:bg-blue-700 */
+  }
+  
+  .nav-link-active {
+    background-color: #1d4ed8; /* bg-blue-700 */
+    color: white; /* text-white */
+  }
+  
+  .nav-icon {
+    font-size: 1.25rem; /* text-xl */
+    margin-right: 0.75rem; /* part of space-x-3 */
+  }
+  
+  .help-container {
+    padding: 0 1rem; /* px-4 */
+    margin-top: 3rem; /* mt-12 */
+  }
+  
+  .help-box {
+    background-color: #1e3a8a; /* bg-blue-900 */
+    border-radius: 0.5rem; /* rounded-lg */
+    padding: 1rem; /* p-4 */
+  }
+  
+  .help-title {
+    color: white; /* text-white */
+    font-weight: 500; /* font-medium */
+    margin-bottom: 0.5rem; /* mb-2 */
+  }
+  
+  .help-text {
+    font-size: 0.875rem; /* text-sm */
+    color: #bfdbfe; /* text-blue-200 */
+    margin-bottom: 0.75rem; /* mb-3 */
+  }
+  
+  .help-button {
+    display: inline-block;
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    background-color: #1d4ed8; /* bg-blue-700 */
+    color: white; /* text-white */
+    font-size: 0.875rem; /* text-sm */
+    border-radius: 0.5rem; /* rounded-lg */
+    text-decoration: none;
+  }
+  
+  .help-button:hover {
+    background-color: #2563eb; /* hover:bg-blue-600 */
+  }
